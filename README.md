@@ -1,67 +1,66 @@
-# Astro + Tailwind
+# Frontend Mentor - FAQ accordion solution
 
-## 🔍 Overview
+This is a solution to the [FAQ accordion challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/faq-accordion-wyfFdeBwBz). Frontend Mentor challenges help you improve your coding skills by building realistic projects.
 
-Here you will find a template to create an `Astro` project that uses `Tailwind`. Also it has `eslint` and `prettier` configured.
+## Table of contents
 
-Run the following command to create a project with the template:
+- [Frontend Mentor - FAQ accordion solution](#frontend-mentor---faq-accordion-solution)
+  - [Table of contents](#table-of-contents)
+  - [Overview](#overview)
+    - [The challenge](#the-challenge)
+    - [Screenshot](#screenshot)
+    - [Links](#links)
+  - [My process](#my-process)
+    - [Built with](#built-with)
+  - [Installation](#installation)
+    - [Install dependencies](#install-dependencies)
+    - [Run Application](#run-application)
 
-```sh
-pnpm create astro@latest <project-name> -- --template evertzner/astro-tailwind-template --yes
+**Note: Delete this note and update the table of contents based on what sections you keep.**
+
+## Overview
+
+### The challenge
+
+Users should be able to:
+
+- Hide/Show the answer to a question when the question is clicked
+- Navigate the questions and hide/show answers using keyboard navigation alone
+- View the optimal layout for the interface depending on their device's screen size
+- See hover and focus states for all interactive elements on the page
+
+### Screenshot
+
+Mobile Screenshot
+
+![Mobile Screenshot](./screenshots/mobile.png)
+
+Desktop Screenshot
+
+![Desktop Screenshot](./screenshots/desktop.png)
+
+### Links
+
+- Solution URL: [Repository](https://github.com/evertzner/faq-accordion)
+- Live Site URL: [Planet Facts](https://faq-accordion-esteban-vertzner.netlify.app/)
+
+## My process
+
+### Built with
+
+- Astro
+- TailwindCSS
+
+## Installation
+
+### Install dependencies
+
+```bash
+pnpm install
 ```
 
-## 🚀 Project Structure
+### Run Application
 
-Inside of your Astro project, you'll see the following folders and files:
-
-```text
-/
-├── .husky/
-│   └── _pre-commit
-├── public/
-│   └── favicon.svg
-├── src/
-│   ├── components/
-│   │   └── Main.astro
-│   ├── layouts/
-│   │   └── Layout.astro
-│   └── pages/
-│   │   └── index.astro
-│   └── styles.css
-└── .gitignore
-└── .prettierrc
-└── .prettierrc.mjs
-└── astro.config.mjs
-└── eslint.config.js
-└── package.json
-└── tailwind.config.mjs
-└── tsconfig.json
+```bash
+pnpm run dev
 ```
-
-Astro looks for `.astro` or `.md` files in the `src/pages/` directory. Each page is exposed as a route based on its file name.
-
-Any static assets, like images, can be placed in the `public/` directory.
-
-## 🧞 Commands
-
-All commands are run from the root of the project, from a terminal:
-
-| Command            | Action                                       |
-| :----------------- | :------------------------------------------- |
-| `pnpm install`     | Installs dependencies                        |
-| `pnpm run dev`     | Starts local dev server at `localhost:4321`  |
-| `pnpm run build`   | Build your production site to `./dist/`      |
-| `pnpm run preview` | Preview your build locally, before deploying |
-| `pnpm run format`  | Format the document using Prettier           |
-| `pnpm run check`   | Check types using `astro check`              |
-| `pnpm run lint`    | Check linting and format                     |
-
-## Husky
-
-To initiate husky run the following command.
-
-```sh
-npx husky init
-```
-
-Replace `pre-commit` file content with content from `_pre-commit`
